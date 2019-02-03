@@ -5,9 +5,9 @@
  */
 
 
-#include "CommonSpear.h"
+#include "CrazyRandomSword.h"
 
-double CommonSpear::hit(double armor) {
+double CrazyRandomSword::hit(double armor) {
     double damage = hitPoints - (rand() % armor / 3 + 2);
     if (damage < 0) {
        return 0;
