@@ -1,0 +1,50 @@
+(a) Paste the console output you saved at the end of step 3.C (2 points)
+Ottoniels-MacBook-Pro:Assignment1 ottojavitt$ git push
+Enumerating objects: 11, done.
+Counting objects: 100% (10/10), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (7/7), 861 bytes | 861.00 KiB/s, done.
+Total 7 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 1 local object.
+To https://github.com/8javitt/Assignment1.git
+   3d373c9..aaca2de  master -> master
+
+(b) How many commits have been done to the repository (not only by you, but by
+anyone) so far? Write the git command you used to get this information (4 points)
+5. git rev-list --count HEAD.
+
+(c) When was the .gitignore file modified last? Write the git command you used to get this information (4 points)
+Thu Jan 10 16:45:38 2019 -0500. git log .gitignore.
+
+(d) Mention two reasons why branches are used in a Git repository (4 points) 
+- To work and make changes without modifying master until it's ready.
+- To break the project by features and the merging them.
+
+(e) What is the difference between git log and git status? (4 points)
+On one hand, git log shows the commit log. On the other hand, git status shows the status of the working tree.
+
+(f) What command would you use to see the commits where “Weapon.h” was one of the committed files? (4 points)
+git log Weapon.h
+
+(g) What command would you use to see the commits whose commit message contains the word “file”? (4 points)
+git log --grep="file"
+
+(h) In the context of object-oriented programming (I) What is inheritance? (II) What is polymorphism? (III) What is encapsulation? (6 points)
+(I) It is when a class inherits properties and characteristics from another class.
+(II) It is the ability to redefine methods for derived classes.
+(III) It's used to hide the values or state of data object inside a class, so not everybody can access them.
+
+(i) What is the main difference between the “Dictator and Lieutenants” workflow and the “Integration management” workflow”? (5 points)
+On one hand, the Dictator and Lieutenants workflow has a main repository where developers pull form and then the developers push to a lieutenant's repository and
+the dictator merges the changes and solves the conflicts. On the other hand, in the Integration management workflow each developer has a public repository and they
+pull and pushh from there and the integration is done by an integration manager.
+
+(j) Why a team of 100 developers would benefit more by following the “Dictator and Lieutenants” workflow instead of the “Centralized” workflow? (5 points)
+Because in the centralized workflow each developer would have to let the other 99 developers that he made a change and in the dictator and lieutenants workflow, we
+have that a lieutenant will be in charge of merge the code from a number of developers.
+
+Is the RoleGame prototype using polymorphism and/or encapsulation? If you find that the prototype is using any of these two OOP principles, 
+please discuss in which way the prototype is using it.
+
+It is using encapsulation because in the weapon class there is a getter method( get name ). It is using polymorphism because the hit method is a virtual method
